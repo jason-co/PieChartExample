@@ -1,0 +1,62 @@
+﻿<Window x:Class="MultiPieChartExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:pieCharts="clr-namespace:PieCharts;assembly=PieCharts"
+        Title="Multi Pie Chart Example" Height="350" Width="525">
+	<Window.Resources>
+		<pieCharts:MultiPieChartBrushCollection x:Key="PieChartCollection">
+			<SolidColorBrush>Maroon</SolidColorBrush>
+			<SolidColorBrush>SteelBlue</SolidColorBrush>
+			<SolidColorBrush>DarkSeaGreen</SolidColorBrush>
+			<SolidColorBrush>Goldenrod</SolidColorBrush>
+			<SolidColorBrush>DarkMagenta</SolidColorBrush>
+		</pieCharts:MultiPieChartBrushCollection>
+	</Window.Resources>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+
+		<DockPanel>
+
+			<TextBlock DockPanel.Dock="Bottom" Text="2 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart x:Name="chart1" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+
+		<DockPanel Grid.Column="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="3 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart  x:Name="chart2" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+
+		<DockPanel Grid.Column="2">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="3 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart  x:Name="chart3" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="4 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart  x:Name="chart4" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1" Grid.Column="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="5 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart  x:Name="chart5" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1" Grid.Column="2">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="5 Items" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+			<pieCharts:MultiPieChart  x:Name="chart6" DataBrushes="{StaticResource PieChartCollection}"/>
+		</DockPanel>
+	</Grid>
+</Window>

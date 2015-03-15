@@ -1,0 +1,72 @@
+﻿<Window x:Class="PieChartExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:pieChartExample="clr-namespace:PieCharts;assembly=PieCharts"
+        Title="Pie Chart Example" Height="350" Width="525">
+
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+
+		<DockPanel>
+
+			<TextBlock DockPanel.Dock="Bottom" Text="25 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.25" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+
+		<DockPanel Grid.Column="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="50 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.5" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+
+		<DockPanel  Grid.Column="2">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="75 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.75" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="33 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.33" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1" Grid.Column="1">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="41 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.41" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+
+		<DockPanel Grid.Row="1" Grid.Column="2">
+
+			<TextBlock DockPanel.Dock="Bottom" Text="86 %" FontWeight="Bold" FontSize="18" HorizontalAlignment="Center"/>
+
+			<pieChartExample:SimplePieChart Percentage="0.86" 
+											VerticalAlignment="Center"
+											HorizontalAlignment="Center"/>
+		</DockPanel>
+	</Grid>
+</Window>

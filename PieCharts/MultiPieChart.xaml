@@ -1,0 +1,10 @@
+﻿<Control x:Class="PieCharts.MultiPieChart"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:pieCharts="clr-namespace:PieCharts">
+	<Control.Template>
+		<ControlTemplate TargetType="{x:Type pieCharts:MultiPieChart}">
+			<Image x:Name="PART_PieChart" RenderOptions.BitmapScalingMode="NearestNeighbor"/>
+		</ControlTemplate>
+	</Control.Template>
+</Control>
